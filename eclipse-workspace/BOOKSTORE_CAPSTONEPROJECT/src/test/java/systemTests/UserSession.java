@@ -1,5 +1,5 @@
 package systemTests;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
+
 import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.ElementNotInteractableException;
 import org.testng.annotations.Test;
