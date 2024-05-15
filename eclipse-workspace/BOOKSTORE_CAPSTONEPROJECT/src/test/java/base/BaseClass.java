@@ -60,7 +60,7 @@ public class BaseClass {
 	public static void openBrowser() throws MalformedURLException {
 
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Administrator\\eclipse-workspace\\BOOKSTORECAPSTONE_PROJECT\\Driver\\chromedriver.exe");
+				"C:\\Users\\Administrator\\Final\\eclipse-workspace\\BOOKSTORE_CAPSTONEPROJECT\\Driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
@@ -159,7 +159,7 @@ public class BaseClass {
 		System.out.println("Browser closed successfully");
 		reports.removeTest(test);
 		reports.flush();
-		//driver.quit();
+		driver.quit();
 	}
 	
 	public static void buttonClick(String xpath) throws IOException , Throwable{
