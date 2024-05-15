@@ -66,7 +66,7 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 
 		driver.manage().deleteAllCookies();
-		driver.get("https://automationteststore.com/index.php?rt=product/category&path=65");
+		driver.get("https://automationteststore.com/index.php?rt=account/login");
 		reports = new ExtentReports();
 		reports.attachReporter(new ExtentSparkReporter(
 				System.getProperty("user.dir") + "\\BOOKSTORECAPSTONE_PROJECT\\ExtentReportsResults.html"));
@@ -209,7 +209,17 @@ public class BaseClass {
 	public static void getTitle() {
 		driver.getTitle();
 	}
+	public static void navigateforward() {
+		driver.navigate().forward();
+		}
 	
+	public static void navigateback() {
+		driver.navigate().back();
+		}
+	
+	public static String getcurrenturl() {
+		return driver.getCurrentUrl();
+		}
 
 	public static String getText(String locType,String locValue) {
 		String text=null;
