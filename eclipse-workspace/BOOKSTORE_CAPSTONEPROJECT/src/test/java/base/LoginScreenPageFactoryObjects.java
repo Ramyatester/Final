@@ -16,6 +16,7 @@ public class LoginScreenPageFactoryObjects {
 	public static final String passWordTextBox ="//input[@id='loginFrm_password']";
 	public static final String loginButton= "//button[normalize-space()='Login']";
 	public static final String loginFailMSG = "//div[@class='alert alert-error alert-danger']";
-
+	public static final String LoggedUrl = "https://automationteststore.com/index.php?rt=account/account";
+	public static final String LoggingUrl = "https://automationteststore.com/index.php?rt=account/login";
 	
 }
