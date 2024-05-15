@@ -5,7 +5,7 @@ import org.openqa.selenium.ElementNotInteractableException;
 import org.testng.annotations.Test;
 import base.BaseClass;
 import base.LoginScreenPageFactoryObjects;
-
+/*Author of Test : Ananth */
 public class UserSession extends BaseClass {
 	@Test(priority = 1)
 	  public void testusersession() throws Throwable {
